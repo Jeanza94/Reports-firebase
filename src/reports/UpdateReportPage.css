@@ -1,0 +1,246 @@
+.modal-page {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: grid;
+    justify-items: center;
+
+}
+
+#none {
+    display: none;
+}
+
+.modal-page-form {
+
+    display: grid;
+    position: relative;
+    height: 90vh;
+    max-width: 600px;
+    margin-top: 5vh;
+    background: linear-gradient(180deg, rgba(39, 8, 242, 0.9948354341736695) 23%, rgba(43, 50, 124, 0.9332107843137255) 55%, rgba(60, 162, 162, 1) 97%);
+    padding: 16px;
+    grid-template-rows: 12vh;
+
+}
+
+#exit-modal {
+
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 1vh;
+    right: 4vw;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+#exit-modal:hover {
+    background-color: red;
+}
+
+.modal-page-form label {
+    display: grid;
+    max-width: 468px;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 3.5rem;
+}
+
+.modal-page-form label span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-page-form label input {
+    padding: 12px;
+    width: 90%;
+    max-width: 470px;
+    height: 6vh;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: red;
+    align-self: flex-start;
+}
+
+.modal-page-form label textarea {
+    width: 90%;
+    max-width: 470px;
+    padding: 12px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.modal-page-form .update-button {
+    position: fixed;
+    top: 84vh;
+    left: 24vw;
+    background-color: white;
+}
+
+.modal-page-form .update-button:hover {
+
+    background-color: blue;
+}
+
+.update-button img {
+    height: 40px;
+    width: 40px;
+}
+
+.modal-page-form button .escape {
+    font-size: 1rem;
+}
+
+.div-top {
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    top: 0;
+}
+
+.div-bot {
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    bottom: 0;
+}
+
+.delete-button {
+
+    position: fixed;
+    top: 84vh;
+    right: 24vw;
+
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 4px ridge blue;
+    cursor: pointer;
+    background-color: white;
+    opacity: 0.9;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+
+.delete-button img {
+    height: 40px;
+    width: 40px;
+}
+
+.arrow-buttons {
+    position: fixed;
+    display: flex;
+    bottom: 30vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-buttons:hover {
+    background-color: green;
+}
+
+.before {
+    left: 36vw;
+}
+
+.next {
+    right: 36vw;
+}
+
+.arrow-buttons img {
+    height: 4rem;
+    width: 4rem;
+}
+
+@media (min-width: 630px) {
+
+    .delete-button {
+        right: 38vw;
+    }
+
+    .modal-page-form .update-button {
+        left: 38vw;
+    }
+
+    .next {
+        right: 42vw;
+    }
+
+    .before {
+        left: 42vw;
+    }
+
+}
+
+@media (max-height:600px) {
+
+    .modal-page-form label span {
+        font-size: 2rem;
+    }
+
+    .modal-page-form label input {
+        font-size: 1.5rem;
+    }
+
+    .modal-page-form label textarea {
+        font-size: 1.5rem;
+    }
+
+    .arrow-buttons {
+        height: 30px;
+        width: 30px;
+        bottom: 20vh;
+    }
+
+    .arrow-buttons img {
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+    .delete-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .delete-button img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .modal-page-form .update-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .modal-page-form .update-button img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (min-height:500px) {
+    .arrow-buttons {
+        bottom: 18vh;
+    }
+}

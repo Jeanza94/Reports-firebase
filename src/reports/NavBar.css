@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    height: 12vh;
+    width: 12vh;
+}
+
+header {
+    background: linear-gradient(4deg, rgba(48, 65, 106) 23%, rgba(70, 121, 114, 1) 55%, rgba(12, 14, 14, 1) 97%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4vh;
+    height: 28vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    width: 100%;
+}
+
+header figure figcaption {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 12vw;
+    color: yellow;
+}
+
+.header-rightside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.header-rightside span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+}
+
+.header-rightside button {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 4vw;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.header-rightside button:hover {
+    color: red;
+}
+
+@media (min-width: 630px) {
+
+    header {
+        height: 12vh;
+    }
+
+    header figure {
+        width: 30%;
+    }
+
+    .header-rightside {
+        width: 63%;
+    }
+}
+
+@media (min-width: 800px) {
+    .header-rightside {
+        justify-content: end;
+    }
+}
